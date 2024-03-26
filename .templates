@@ -1,0 +1,29 @@
+{
+	"nexelliad-node-only": {
+		"description": "Nexelliad Node",
+		"modules": {
+			"nexelliad:kd0": {
+				"reset-peers": false,
+				"args":{
+					"rpclisten": "0.0.0.0:42110",
+					"listen": "0.0.0.0:42111",
+					"profile": 8110
+				}
+			}
+		}
+	},
+	"nexelliad-archival-only" : {
+		"description": "Nexelliad Archival Node",
+		"modules": {
+			"nexelliad:kd0": {
+				"reset-peers": false,
+				"args": {
+					"archival": null,
+					"rpclisten": "0.0.0.0:42110",
+					"listen": "0.0.0.0:42111",
+					"profile": 8110
+				}
+			}
+		}
+	}
+}

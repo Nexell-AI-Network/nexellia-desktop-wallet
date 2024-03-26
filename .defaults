@@ -1,0 +1,17 @@
+{
+	"enableMining": false,
+	"modules": {
+		"nexelliad:kd0": {
+			"reset-peers": false,
+			"args": {
+				"rpclisten": "0.0.0.0:33455",
+				"listen": "0.0.0.0:33456",
+				"addpeer": "mainnet-dnsseed1.nexell-ia.net",
+				"addpeer": "mainnet-dnsseed2.nexell-ia.net",
+		                "addpeer": "mainnet-dnsseed3.nexell-ia.net",
+		                "addpeer": "mainnet-dnsseed3.nexell-ia.net",			
+				"profile": 8110
+			}
+		}
+	}
+}
