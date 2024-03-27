@@ -167,8 +167,8 @@ you must use an array of addresses as follows: `"args" : { "connect" : [ "peer-a
 		"nexelliad:kd0": {
 			"reset-peers": false,
 			"args": {
-				"rpclisten": "0.0.0.0:42110",
-				"listen": "0.0.0.0:42111",
+				"rpclisten": "0.0.0.0:33455",
+				"listen": "0.0.0.0:33456",
 				"profile": 8110
 			},
 			"upnpEnabled": true
