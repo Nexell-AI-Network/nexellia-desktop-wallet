@@ -43,7 +43,7 @@ class App extends FlowApp{
 			try {
 				await fse.remove(this.getConfigFolderPath());
 			} catch(ex) {
-				alert('Error resetting Nexellia Desktop data folder: '+ex);
+				alert('Error resetting Nexell-AI Desktop data folder: '+ex);
 			}
 			await fse.ensureDir(this.getConfigFolderPath());
 			fs.writeFileSync(networkTagFile, currentNetworkType, { encoding : 'utf8'});

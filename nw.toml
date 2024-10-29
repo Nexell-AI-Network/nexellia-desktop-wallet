@@ -1,13 +1,13 @@
 [application]
 name = "nexellia-desktop"
-title = "Nexellia Desktop"
+title = "Nexell-AI Desktop"
 version = "package.json::version"
 organization = "Nexellia Network"
 
 [description]
 short = "Desktop Node and Wallet for Nexellia"
 long = """
-Nexellia Desktop is a desktop wallet and a p2p network node instance. This
+Nexell-AI Desktop is a desktop wallet and a p2p network node instance. This
 application allows you to participate in the Nexellia network by running a
 local node instance and offers access to a local wallet, compatible with
 the web wallet available at https://wallet.nexelliacoin.com

@@ -1,6 +1,6 @@
 # macOS:
 #
-# this script is useful when running Nexellia Desktop from shell and terminating it
+# this script is useful when running Nexell-AI Desktop from shell and terminating it
 # with Ctrl+C as doing this may result in NWJS and Nexellia processes remaining in
 # the background.
 kill -9 $(lsof -ti:8110)

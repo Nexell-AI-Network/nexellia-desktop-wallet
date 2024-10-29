@@ -37,9 +37,10 @@ window.PWA_MODULES["@nexellia/core-lib"] = "N/A";
 
 class NexelliaDesktopApp extends FlowApp{
 	render(){
-		let walletMeta = {"generator":"Nexellia Desktop"}
+		let walletMeta = {"generator":"Nexell-AI Desktop"}
 		let list = [
-			['Nexellia','MIT','Copyright (c) 2023 Nexellia Developers'],
+			['Nexell-AI','MIT','Copyright (c) 2024 Nexell-AI Developers'],
+			['Karlsen','MIT','Copyright (c) 2023 Karlsen Developers'],
 			['Kaspa','MIT','Copyright (c) 2020 Kaspa Developers'],
 //			['PostgreSQL','PostgreSQL','Portions Copyright © 1996-2020, The PostgreSQL Global Development Group<br/>Portions Copyright © 1994, The Regents of the University of California'],
 //			['Mosquitto','EDL-V10 EPL-V10','Copyright (c) 2007, Eclipse Foundation, Inc. and its licensors'],
@@ -48,16 +49,15 @@ class NexelliaDesktopApp extends FlowApp{
 			['Chromium','BSD', 'Copyright (c) The Chromium Authors']
 		];
 		let copyright = [
-			['Nexellia Desktop','Copyright (c) 2024 Nexellia Developers', 'All Rights Reserved'],
+			['Nexell-AI Desktop','Copyright (c) 2024 Nexell-AI Developers', 'All Rights Reserved'],
 			['KDX','Copyright (c) 2020 Kaspa Developers', 'All Rights Reserved']
 		];
 		let donationAddresses = [
-			["Nexellia Devfund donations:", "nexellia:qzrq7v5jhsc5znvtfdg6vxg7dz5x8dqe4wrh90jkdnwehp6vr8uj7csdss2l7"],
-			["Nexellia Desktop donations:", "nexellia:qqe3p64wpjf5y27kxppxrgks298ge6lhu6ws7ndx4tswzj7c84qkjlrspcuxw"],
+			["Nexell-AI Devfund donations:", "nexellia:qpn5ce67s3mxt20egyw5ervxz05sjgyszlvka006e867e8hk38kpvwhk7m60v"],
 		]
 		return html`
 		<flow-caption-bar
-			logo="/resources/images/nexellia-logo-light-bg.png">Nexellia Desktop</flow-caption-bar>
+			logo="/resources/images/nexellia-logo-light-bg.png">Nexell-AI Desktop</flow-caption-bar>
 		<tab-content for="home">
 			<flow-form-control id="applications" icon="fal:fire" no-help style='display:none;'>
 				<flow-i18n caption>Applications</flow-i18n>
@@ -74,9 +74,9 @@ class NexelliaDesktopApp extends FlowApp{
 					<div slot="title" is="i18n-div" caption>NEXELLIA RESOURCES</div>
 					<ul style="font-size: 12px;">
 						<li><flow-shell-link
-							href="https://github.com/nexellia-network/"><flow-i18n>GitHub</flow-i18n></flow-shell-link></li>
+							href="https://github.com/nexell-ai-network/"><flow-i18n>GitHub</flow-i18n></flow-shell-link></li>
 						<li><flow-shell-link
-							href="https://discord.gg/ZPZRvgMJDT"><flow-i18n>Discord Chat</flow-i18n></flow-shell-link></li>
+							href="https://discord.gg/MHn4wStC4h"><flow-i18n>Discord Chat</flow-i18n></flow-shell-link></li>
 						<li><flow-link
 							id="release-notes-link"><flow-i18n>Release Notes</flow-i18n></flow-link></li>
 					</ul>
@@ -156,7 +156,7 @@ class NexelliaDesktopApp extends FlowApp{
 				
 				<h4 slot="info" class="title"><flow-i18n>Data Folder</flow-i18n></h4>
 				<p slot="info" is="i18n-p">
-					Data Folder location is used for storage by all Nexellia Desktop
+					Data Folder location is used for storage by all Nexell-AI Desktop
 					modules. In default configuration this includes Nexelliad blockchain
 					data. This location also contains process log files.
 				</p>
@@ -175,7 +175,7 @@ class NexelliaDesktopApp extends FlowApp{
 				</flow-checkbox>
 				<h4 slot="info" class="title"><flow-i18n>Advanced mode</flow-i18n></h4>
 				<p slot="info" is="i18n-p">
-					Advanced mode allows you to manually configure, interact with and monitor Nexellia Desktop services.
+					Advanced mode allows you to manually configure, interact with and monitor Nexell-AI Desktop services.
 				</p>
 			</flow-form-control>
 			<flow-form-control icon="fal:cog" class="advanced-tool">
@@ -184,7 +184,7 @@ class NexelliaDesktopApp extends FlowApp{
 					slot="input"><flow-i18n>Run in Background</flow-i18n></flow-checkbox>
 				<h4 slot="info" class="title"><flow-i18n>Background Execution</flow-i18n></h4>
 				<p slot="info" is="i18n-p">
-					When enabled, Nexellia Desktop runs itself and it's services hidden in the background
+					When enabled, Nexell-AI Desktop runs itself and it's services hidden in the background
 					and becomes accessible via the menu bar (OSX &amp; Linux) or system tray menu (on Windows).
 				</p>
 			</flow-form-control>
@@ -195,7 +195,7 @@ class NexelliaDesktopApp extends FlowApp{
 				<flow-checkbox id="settings-compound-with-latest-change-addr" class="block advanced-tool"
 					slot="input"><flow-i18n>Use latest Change address</flow-i18n></flow-checkbox>
 				<h4 slot="info" class="title"><flow-i18n>Compounding UTXOs</flow-i18n></h4>
-				<p slot="info" is="i18n-p">When Autocompound enabled, Nexellia Desktop compound UTXOs when there will be compoundable count of unspent transaction outputs (UTXOs).'Use latest Change address' will compund UTXOs using current/latest change address instead of first change address. </p>
+				<p slot="info" is="i18n-p">When Autocompound enabled, Nexell-AI Desktop compound UTXOs when there will be compoundable count of unspent transaction outputs (UTXOs).'Use latest Change address' will compund UTXOs using current/latest change address instead of first change address. </p>
 			</flow-form-control>
 			<!-- flow-form-control icon="fal:drafting-compass" class="advanced-tool">
 				<flow-i18n caption>Metrics</flow-i18n>
@@ -216,7 +216,7 @@ class NexelliaDesktopApp extends FlowApp{
 
 				<h4 slot="info" class="title"><flow-i18n>Metrics</flow-i18n></h4>
 				<p slot="info" is="i18n-p">
-					You can stream Nexellia Desktop metrics to your own StatsD-compatible server.
+					You can stream Nexell-AI Desktop metrics to your own StatsD-compatible server.
 				</p>
 			</flow-form-control-->
 
@@ -230,8 +230,8 @@ class NexelliaDesktopApp extends FlowApp{
 				</div>
 				<h4 slot="info" class="title"><flow-i18n>Service Configuration</flow-i18n></h4>
 				<p slot="info" is="i18n-p">
-					Configuration editor allows you to customize Nexellia Desktop environment.
-					Nexellia Desktop configuration is represented in JSON
+					Configuration editor allows you to customize Nexell-AI Desktop environment.
+					Nexell-AI Desktop configuration is represented in JSON
 					by a list of application/service configuration objects.
 					Each service configuration object is used 
 					to start the corresponding service.
@@ -261,7 +261,7 @@ class NexelliaDesktopApp extends FlowApp{
 				</div>
 				<h4 slot="info" class="title"><flow-i18n>Configuration Templates</flow-i18n></h4>
 				<p slot="info" is="i18n-p">
-					Configuration templates allow you to load pre-made Nexellia Desktop configurations.
+					Configuration templates allow you to load pre-made Nexell-AI Desktop configurations.
 				</p>
 			</flow-form-control>
 			<flow-form-control icon="fal:database">
@@ -709,7 +709,7 @@ class NexelliaDesktopApp extends FlowApp{
 		this.tray = tray;
 
 		if(os.platform != 'darwin')
-			tray.title = 'Nexellia Desktop';
+			tray.title = 'Nexell-AI Desktop';
 
 		let menu = new nw.Menu();
 		this.showMenu = new nw.MenuItem({ 
@@ -999,12 +999,12 @@ class NexelliaDesktopApp extends FlowApp{
 		//let readmeContent = fs.readFileSync(path.join(this.manager.appFolder, 'README.md'))+"";
 		let changelogContent = fs.readFileSync(path.join(this.manager.appFolder, 'CHANGELOG.md'))+"";
 		dialog.content = 
-`#	Welcome to Nexellia Desktop ${pkg.version}!
+`#	Welcome to Nexell-AI Desktop ${pkg.version}!
 
 Useful resources:
 - Nexellia Discord: https://discord.gg/ZPZRvgMJDT
 - Nexellia GitHub: https://github.com/nexellia-network/
-- Nexellia Desktop GitHub: https://github.com/nexellia-network/nexellia-desktop
+- Nexell-AI Desktop GitHub: https://github.com/nexellia-network/nexellia-desktop
 
 ${changelogContent}`;
 		$("#release-notes-link").on("click", ()=>{
@@ -1269,7 +1269,7 @@ ${changelogContent}`;
 			console.log("%c######## closeWin called ######", 'color:red')
 			if(isExit !== true && !this.runInBG){
 				let {btn} = await FlowDialog.show({
-					title:i18n.t("EXIT Nexellia Desktop"),
+					title:i18n.t("EXIT Nexell-AI Desktop"),
 					body:i18n.t("Are you sure?"),
 					btns:[{
 						text:i18n.t('Cancel'),
@@ -1558,7 +1558,7 @@ ${changelogContent}`;
 			this.setUiLoading(false);
 
 			let {btn} = await FlowDialog.show({
-				title:i18n.t("Nexellia Desktop Update"),
+				title:i18n.t("Nexell-AI Desktop Update"),
 				body:i18n.t(`Version ${version} is available, would you like to update?`),
 				btns:[{
 					text:i18n.t('No'),
@@ -1574,10 +1574,10 @@ ${changelogContent}`;
 				require('nw.gui').Shell.openExternal('https://nexelliacoin.com');
 
 				let confirm = await FlowDialog.show({
-					title:i18n.t("Nexellia Desktop Update"),
+					title:i18n.t("Nexell-AI Desktop Update"),
 					body:html`Please download the latest version from  <flow-link href="https://nexelliacoin.com" target="_blank">https://nexelliacoin.com</flow-link>
 					<br/>&nbsp;<br/>
-					Nexellia Desktop will now shutdown`,
+					Nexell-AI Desktop will now shutdown`,
 					btns:[{
 						text:i18n.t('Cancel'),
 						value:'cancel'
