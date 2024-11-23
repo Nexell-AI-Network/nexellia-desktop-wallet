@@ -5,15 +5,6 @@ Nexell-AI Desktop is a dedicated desktop process manager for
 
 
 
-### Running Nexell-AI Desktop from binary
-
-```
-wget https://github.com/Nexell-AI-Network/nexellia-desktop-wallet/releases/download/v1.0.1/nexellia-desktop-v1.0.1-linux-x64.zip
-cd nexellia-desktop
-nw .
-```
-
-
 ### Building Nexell-AI Desktop from source
 
 In addition to Node.js (must be 14.0+), please download and install
