@@ -7,6 +7,6 @@
 ## [1.0.1] - 2024-10-29
 - Added Nexelliad v1.1.2 support
 
-## [1.0.0] - 2024-02-01
+## [1.0.0] - 2024-03-27
 - Added Nexellia Network support
 
