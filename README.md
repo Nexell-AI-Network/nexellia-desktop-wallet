@@ -1,8 +1,17 @@
 # Nexell-AI Desktop
 
 Nexell-AI Desktop is a dedicated desktop process manager for
-[Nexellia node](https://github.com/nexellia-network/nexelliad).
+[Nexellia node](https://github.com/nexell-ai-network/nexelliad).
 
+
+
+### Running Nexell-AI Desktop from binary
+
+```
+wget https://github.com/Nexell-AI-Network/nexellia-desktop-wallet/releases/download/v1.0.1/nexellia-desktop-v1.0.1-linux-x64.zip
+cd nexellia-desktop
+nw .
+```
 
 
 ### Building Nexell-AI Desktop from source
@@ -43,7 +52,7 @@ Nexell-AI Desktop.
 Nexell-AI Desktop installation:
 
 ```
-git clone https://github.com/nexellia-network/nexellia-desktop
+git clone https://github.com/nexell-ai-network/nexellia-desktop
 cd nexellia-desktop
 npm install
 npm install emanator@latest

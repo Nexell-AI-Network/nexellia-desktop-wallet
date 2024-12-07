@@ -6,7 +6,7 @@
 			"args": {
 				"rpclisten": "0.0.0.0:33455",
 				"listen": "0.0.0.0:33456",
-				"addpeer": "mainnet-dnsseed1.nexell-ai.com",			
+				"addpeer": "162.55.131.20:33457",			
 				"profile": 8110
 			}
 		}

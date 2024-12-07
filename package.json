@@ -1,7 +1,7 @@
 {
   "name": "nexellia-desktop",
   "description": "Nexell-AI Desktop",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "main": "nexellia-desktop.js",
   "files": [
@@ -35,7 +35,7 @@
     "@grpc/grpc-js": "1.6.10",
     "@grpc/proto-loader": "0.7.2",
     "@nexellia/grpc-node": ">=1.0.8",
-    "@nexellia/ux": "github:nexellia-network/node-nexellia-ux",
+    "@nexellia/ux": "github:nexell-ai-network/node-nexellia-ux",
     "@nexellia/wallet-worker": ">=1.1.25",
     "@runonflux/nat-upnp": "1.0.2",
     "@webcomponents/webcomponentsjs": "2.6.0",

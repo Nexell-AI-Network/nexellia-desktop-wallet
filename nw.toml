@@ -10,7 +10,7 @@ long = """
 Nexell-AI Desktop is a desktop wallet and a p2p network node instance. This
 application allows you to participate in the Nexellia network by running a
 local node instance and offers access to a local wallet, compatible with
-the web wallet available at https://wallet.nexelliacoin.com
+the web wallet available at https://wallet.nexell-ai.com
 """
 
 [package]
@@ -47,7 +47,7 @@ items = [{ copy = { glob = [
 
 [[dependency]]
 name = "nexelliad"
-git = { url = "https://github.com/nexellia-network/nexelliad", branch = "master" }
+git = { url = "https://github.com/nexell-ai-network/nexelliad", branch = "master" }
 run = [
     { cmd = "go build" },
     { cmd = "go build", cwd = "cmd/genkeypair" },
@@ -82,11 +82,11 @@ run_after_setup = true
 
 [images]
 application="logo.png"
-macos-application="Icon1024.png"
-macos-disk-image="nexellia-desktop-dmg.png"
+macos-application="logo.png"
+macos-disk-image="logo.png"
 innosetup-icon="logo.png"
-innosetup-wizard-small="nexellia-desktop-55x58.bmp"
-innosetup-wizard-large="nexellia-desktop-164x314.bmp"
+innosetup-wizard-small="logo.png"
+innosetup-wizard-large="logo.png"
 
 [languages]
 languages = ["dutch", "english", "finnish", "french", "german", "italian", "polish", "portuguese", "russian", "spanish", "turkish", "ukranian"]

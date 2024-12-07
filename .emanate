@@ -9,7 +9,7 @@ const E = new Emanator(__dirname, {
     suffix : flags.full ? '-dev' : '',
     title : 'Nexell-AI Desktop',
     banner : 'Nexell-AI Desktop',
-    git : 'https://github.com/nexellia-network/nexellia-desktop',
+    git : 'https://github.com/nexell-ai-network/nexellia-desktop',
     author : "Nexellia Developers",
     url : "https://nexell-ia.net",
     // archive : true,
@@ -52,7 +52,7 @@ const nexelliad = E.task('nexelliad', ['origin'], async () => {
         process.env.PATH = ['C:\\TDM-GCC-64\\bin', ...process.env.PATH.split(';')].join(';');
     }
 
-    let dest = path.join(go.SRC,'github.com/nexellia-network/');
+    let dest = path.join(go.SRC,'github.com/nexell-ai-network/');
     if((E.flags.reset || E.flags.clean) && fs.existsSync(dest))
         await E.emptyDir(dest);
 
@@ -66,8 +66,8 @@ const nexelliad = E.task('nexelliad', ['origin'], async () => {
 
     for(const repo of repos) {
         let [name, git_branch] = repo.split(':');
-        console.log(`git clone https://github.com/nexellia-network/${name} branch: ${git_branch || 'master'}`.brightYellow);
-        await git.clone(`https://github.com/nexellia-network/${name}`,dest, {branch : git_branch || 'master'});
+        console.log(`git clone https://github.com/nexell-ai-network/${name} branch: ${git_branch || 'master'}`.brightYellow);
+        await git.clone(`https://github.com/nexell-ai-network/${name}`,dest, {branch : git_branch || 'master'});
     }
 
     let targets = [

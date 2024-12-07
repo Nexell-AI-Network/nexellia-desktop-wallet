@@ -1002,9 +1002,9 @@ class NexelliaDesktopApp extends FlowApp{
 `#	Welcome to Nexell-AI Desktop ${pkg.version}!
 
 Useful resources:
-- Nexellia Discord: https://discord.gg/ZPZRvgMJDT
-- Nexellia GitHub: https://github.com/nexellia-network/
-- Nexell-AI Desktop GitHub: https://github.com/nexellia-network/nexellia-desktop
+- Nexellia Discord: https://discord.gg/MHn4wStC4h
+- Nexellia GitHub: https://github.com/nexell-ai-network/
+- Nexell-AI Desktop GitHub: https://github.com/nexell-ai-network/nexellia-desktop
 
 ${changelogContent}`;
 		$("#release-notes-link").on("click", ()=>{
@@ -1531,7 +1531,7 @@ ${changelogContent}`;
 		this.updateChecked = true;
 
 		//const url = 'http://localhost:9090/version.json';
-		const url = 'https://nexelliacoin.com/nexellia-desktop/version.json';
+		const url = 'https://nexell-ai.com/nexellia-desktop/version.json';
 		let resp = await fetch(url).catch((error) => {
 			alert(error.toString());
 		});
@@ -1540,7 +1540,7 @@ ${changelogContent}`;
 		});
 
 		if(!data) {
-			console.log("missing version data in https://nexelliacoin.com/nexellia-desktop/version.json");
+			console.log("missing version data in https://nexell-ai.com/nexellia-desktop/version.json");
 			return false;
 		}
 
@@ -1571,11 +1571,11 @@ ${changelogContent}`;
 			});
 
 			if(btn == 'ok') {
-				require('nw.gui').Shell.openExternal('https://nexelliacoin.com');
+				require('nw.gui').Shell.openExternal('https://nexell-ai.com');
 
 				let confirm = await FlowDialog.show({
 					title:i18n.t("Nexell-AI Desktop Update"),
-					body:html`Please download the latest version from  <flow-link href="https://nexelliacoin.com" target="_blank">https://nexelliacoin.com</flow-link>
+					body:html`Please download the latest version from  <flow-link href="https://nexell-ai.com" target="_blank">https://nexell-ai.com</flow-link>
 					<br/>&nbsp;<br/>
 					Nexell-AI Desktop will now shutdown`,
 					btns:[{

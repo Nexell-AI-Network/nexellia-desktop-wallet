@@ -1,7 +1,12 @@
 # Changelog
 
+
+## [1.0.2] - 2024-12-07
+- Added Nexelliad v2.0.6 support
+
+## [1.0.1] - 2024-10-29
+- Added Nexelliad v1.1.2 support
+
 ## [1.0.0] - 2024-02-01
-- Removed CPU and GPU 'nexellia-miner' and node CPU 'nexelliaminer' from the desktop wallet.
-- Removed Kasparov and console code from the desktop application.
-- Enabled Dutch, Finnish, German Italian, Ppolish, Portuguese, Russian, Spanish, Turkish and Ukranian translations to Windows installer.
-- Added Nexellia Network support.
+- Added Nexellia Network support
+

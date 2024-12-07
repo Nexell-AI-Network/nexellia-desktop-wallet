@@ -5,8 +5,9 @@
 			"nexelliad:kd0": {
 				"reset-peers": false,
 				"args":{
-					"rpclisten": "0.0.0.0:42110",
-					"listen": "0.0.0.0:42111",
+					"rpclisten": "0.0.0.0:33455",
+					"listen": "0.0.0.0:33456",
+					"addpeer": "162.55.131.20:33457",
 					"profile": 8110
 				}
 			}
@@ -19,8 +20,9 @@
 				"reset-peers": false,
 				"args": {
 					"archival": null,
-					"rpclisten": "0.0.0.0:42110",
-					"listen": "0.0.0.0:42111",
+					"rpclisten": "0.0.0.0:33455",
+					"listen": "0.0.0.0:33456",
+					"addpeer": "162.55.131.20:33457",
 					"profile": 8110
 				}
 			}

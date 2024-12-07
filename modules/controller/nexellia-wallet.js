@@ -2,7 +2,7 @@ import {NexelliaWallet as BaseNexelliaWallet} from '/node_modules/@nexellia/ux/n
 
 class NexelliaWallet extends BaseNexelliaWallet{
 	makeFaucetRequest(subject, args){
-		let origin = 'https://faucet.nexelliacoin.com';
+		let origin = 'https://faucet.nexell-ai.com';
 		//origin = 'http://localhost:3000';
 		const {address, amount} = args;
 		let path = {

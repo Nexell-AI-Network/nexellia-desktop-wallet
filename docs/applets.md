@@ -47,7 +47,7 @@ The following is a `package.json` sample file:
     "version": "1.2.3",
     "nexellia-desktop": { 
         "name": "My App",
-        "location": "https://nexelliacoin.com"
+        "location": "https://nexell-ai.com"
     }
 }
 ```
