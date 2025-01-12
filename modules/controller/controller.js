@@ -39,7 +39,7 @@ class NexelliaDesktopApp extends FlowApp{
 	render(){
 		let walletMeta = {"generator":"Nexell-AI Desktop"}
 		let list = [
-			['Nexell-AI','MIT','Copyright (c) 2024 Nexell-AI Developers'],
+			['Nexell-AI','MIT','Copyright (c) 2025 Nexell-AI Developers'],
 			['Karlsen','MIT','Copyright (c) 2023 Karlsen Developers'],
 			['Kaspa','MIT','Copyright (c) 2020 Kaspa Developers'],
 //			['PostgreSQL','PostgreSQL','Portions Copyright © 1996-2020, The PostgreSQL Global Development Group<br/>Portions Copyright © 1994, The Regents of the University of California'],
@@ -49,7 +49,7 @@ class NexelliaDesktopApp extends FlowApp{
 			['Chromium','BSD', 'Copyright (c) The Chromium Authors']
 		];
 		let copyright = [
-			['Nexell-AI Desktop','Copyright (c) 2024 Nexell-AI Developers', 'All Rights Reserved'],
+			['Nexell-AI Desktop','Copyright (c) 2025 Nexell-AI Developers', 'All Rights Reserved'],
 			['KDX','Copyright (c) 2020 Kaspa Developers', 'All Rights Reserved']
 		];
 		let donationAddresses = [
