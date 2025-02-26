@@ -1,7 +1,7 @@
 {
   "name": "nexellia-desktop",
   "description": "Nexell-AI Desktop",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "main": "nexellia-desktop.js",
   "files": [
